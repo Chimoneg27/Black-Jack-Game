@@ -6,6 +6,7 @@ let isAlive = true
 let message = ""
 
 let messageEl = document.getElementById('message-el')
+let sumEl = document.getElementById('sum-el')
 
 const startGame = () => {
   if (sum <= 20) {
@@ -18,4 +19,5 @@ const startGame = () => {
     isAlive = false
   }
   messageEl.textContent = message
+  sumEl.textContent = "Sum: " + sum; 
 }
