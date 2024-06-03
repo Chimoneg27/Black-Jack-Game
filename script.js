@@ -23,3 +23,9 @@ const startGame = () => {
   }
   messageEl.textContent = message
 }
+
+const newCard = () => {
+  let card = 3
+  sum += card
+  startGame()
+}
