@@ -49,10 +49,12 @@ const renderGame = () => {
 }
 
 const newCard = () => {
-  let card = getRandomCard()
-  sum += card
-  cards.push(card)
-  renderGame()
+  if(isAlive === true && hasBlackJack === false) {
+    let card = getRandomCard()
+    sum += card
+    cards.push(card)
+    renderGame()
+  }
 }
 
 function rollDice() {
